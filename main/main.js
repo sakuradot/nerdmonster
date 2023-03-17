@@ -1,4 +1,24 @@
-const images = document.querySelectorAll(".image-container");
+const images = document.querySelectorAll('.lazyload, .image-container');
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      img.classList.add('is-visible');
+      observer.unobserve(img);
+    }
+  });
+}, options);
+
+images.forEach(img => {
+  observer.observe(img);
+});
 
 function checkScroll() {
   images.forEach(image => {
@@ -22,5 +42,3 @@ checkScroll();
 
 window.addEventListener("scroll", checkScroll);
 window.addEventListener("resize", checkScroll);
-
-
