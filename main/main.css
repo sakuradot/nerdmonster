@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Source Code Pro;
+    src: url(../fonts/SourceCodePro-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: AbigateDesgo;
+  src: url(../fonts/abigatedesgoitalic.ttf);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #E4E4E4;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.headertext {
+    font-family: 'AbigateDesgo', monospace;
+    font-style: italic; 
+}
+
+.text1 {
+  font-family: 'Source Code Pro', monospace;
+  font-style: italic; 
+  color: #15191d;
+}
+
+

@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #15191d;
+    }
+
+    .text1 {
+      font-family: 'Source Code Pro', monospace;
+      font-style: italic; 
+      color: #E4E4E4;
+    }
+
+    .headertext {
+      font-family: 'AbigateDesgo', monospace;
+      font-style: italic; 
+      color: #E4E4E4;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+      color: red;
+    }
+    
+    
+}
+
